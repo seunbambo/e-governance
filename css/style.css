@@ -1,0 +1,295 @@
+* {
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Raleway", sans-serif;
+  /*font-family: "Quicksand", sans-serif;*/
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  color: #002868;
+  height: 100%;
+  background-image: url("../images/logo4.png");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-attachment: fixed;
+}
+
+.fa-user-circle {
+  color: #ccc;
+}
+
+.fa-address-book {
+  color: #ccc;
+}
+
+.fa-asterisk {
+  color: blue;
+}
+
+#font-user {
+  font-size: 100px;
+}
+
+.container {
+  min-height: 100%;
+}
+
+.fa {
+  font-size: 30px;
+  margin: 5px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.fa-angle-left:active {
+  transform: rotate(-90deg);
+}
+
+#panel,
+#flip {
+  padding: 5px;
+
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+  cursor: pointer;
+}
+
+#panel {
+  padding: 20px;
+  display: none;
+}
+
+.footer {
+  position: absolute;
+
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#logo-nav {
+  width: 45px;
+  height: 45px;
+  margin-right: 250px;
+}
+
+.heading {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.jumbotron {
+  background: rgba(238, 238, 238, 0.39);
+  color: #002868;
+  box-shadow: 3px 3px 10px #aaa;
+}
+
+.card {
+  background: rgba(238, 238, 238, 0.2);
+  border: 1px solid rgba(238, 238, 238, 0.39);
+  width: 65vw;
+}
+
+.background {
+  background: rgba(238, 238, 238, 0.39);
+  padding: 5% 0%;
+  border: 1px solid rgba(238, 238, 238, 0.39);
+  width: 100%;
+}
+
+.form-register {
+  padding: 5% 0%;
+  font-size: 0.83rem;
+  color: #42526b;
+  font-family: "Open Sans";
+}
+
+.form-birth {
+  font-size: 0.83rem;
+  color: #42526b;
+  font-family: "Open Sans";
+}
+
+.btn-custom {
+  background: transparent;
+  color: #aaa;
+  -webkit-transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+  border: 1px solid #cea6a6;
+
+  padding: 0px;
+  margin: 0 5px;
+}
+
+.btn-custom:hover {
+  color: #aaa;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-submit {
+  background: #002868;
+  color: #cea6a6;
+}
+
+.btn-login {
+  background: #bf0a30;
+  color: #fff;
+  border-radius: 0px;
+  padding: 15px;
+}
+
+.btn-login:hover {
+  background: #df4365;
+  color: #fff;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.icon {
+  padding: 15px;
+  color: #999;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input {
+  color: #002868;
+  border: 2px solid #eee;
+  width: 100%;
+  padding: 12px 20px;
+  text-align: left;
+  border-radius: 0px;
+  font-size: 0.83rem;
+}
+
+.input-field:hover {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+.button-icon {
+  background: #eee;
+  color: #42526b;
+  border: 1px solid #eee;
+}
+
+h2 {
+  color: #002868;
+}
+
+#type {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 200;
+  color: blue;
+}
+
+.navbar-fixed-left {
+  width: 140px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none; /* Cancel default li float: left */
+  width: 139px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 160px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-top: -50px;
+  margin-left: 140px;
+}
+
+.scroll {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll p {
+  font-size: 1em;
+  color: blue;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: scroll 15s linear infinite;
+  -webkit-animation: scroll 15s linear infinite;
+  animation: scroll 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -moz-transform: translateX(100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(100%);
+    /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(-100%);
+    /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #type {
+    font-size: 23px;
+  }
+}
