@@ -73,18 +73,22 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email</label>
                                 <div class="input-icons">
-                                    <i class="fa fa-envelope icon">
-                                    </i>
-                                    <input class="input-field" type="text" autocomplete="off" placeholder="Enter Email" required />
+                                    <button type="button" class="button-icon">
+                                        <i class="fa fa-envelope icon">
+                                        </i>
+                                    </button>
+                                    <input class="input input-field" type="text" autocomplete="off" placeholder="Enter Email" required />
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Password</label>
                                 <div class="input-icons">
-                                    <i class="fa fa-key icon">
-                                    </i>
-                                    <input class="input-field" type="password" autocomplete="off" placeholder="Enter Password" required />
+                                    <button type="button" class="button-icon">
+                                        <i class="fa fa-key icon">
+                                        </i>
+                                    </button>
+                                    <input class="input input-field" type="password" autocomplete="off" placeholder="Enter Password" required />
                                 </div>
                             </div>
                         </form>

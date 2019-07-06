@@ -153,20 +153,16 @@ body {
   cursor: pointer;
 }
 
-.input-icons i {
-  position: absolute;
-}
-
 .input-icons {
   width: 100%;
-  margin-bottom: 10px;
+
   display: flex;
 }
 
 .icon {
-  padding: 15px;
+  font-size: 1.2rem;
   color: #999;
-  min-width: 50px;
+
   text-align: center;
 }
 
@@ -178,11 +174,6 @@ body {
   text-align: left;
   border-radius: 0px;
   font-size: 0.83rem;
-}
-
-.input-field:hover {
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 5px #ccc;
 }
 
 .button-icon {
