@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript">
-        < script src = "js/jquery-prod-3.4.1.js" >
-    </script>
+    <script src="js/jquery-prod-3.4.1.js" type="text/javascript"></script>
     <title>E-Governance</title>
 </head>
 
