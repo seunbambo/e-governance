@@ -12,7 +12,7 @@ class myPDF extends FPDF
     {
 
         //$fname = print_r($fname);
-        $this->image('images/birth-certificate.png', 13, -3, 251);
+        $this->image('images/birth-certificate.png', 13, -3, 250);
         $this->Cell(80);
         $this->SetFont('Courier', 'BI', 17);
         include 'submit.php';
