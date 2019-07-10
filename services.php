@@ -83,9 +83,11 @@
 
                 </div>
                 <div class="row mt-3">
-                    <button type="button" class="btn btn-info mx-auto text-bold" value="" style="padding: 10px 30px;; border-radius: 0px;">
-                        Pay ($50.00)
-                    </button>
+                    <div class="col-lg-4">
+                        <a href="http://34.254.53.229:8080/evisa/payment"><button type="button" class="btn btn-info mx-auto text-bold" value="" style="padding: 10px 30px;; border-radius: 0px;">
+                                Pay ($50.00)
+                            </button></a>
+                    </div>
                 </div>
             </form>
         </div>

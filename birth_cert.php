@@ -1,74 +1,163 @@
-<?php include 'inc/header.php'; ?>
+<?php
 
-<?php include 'inc/side-bar.php'; ?>
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+$accessmail = 'seun.bambo@cg-infotech.com';
+if (empty($_SESSION)) {
+    header("Location: signup.php");
+    exit();
+} else {
+    include 'inc/header.php';
+}
+?>
+
 <!-- /#sidebar-wrapper -->
 
 <!-- Page Content -->
 <div id="page-content-wrapper">
 
 
-    <div class="container-fluid mt-5">
-        <h1 class="mt-4">Birth Certificate</h1>
-        <div class="card mt-5 mx-auto">
+    <div class="container-fluid mt-5 mb-5">
 
-            <form class="form-register" action="" method="post" enctype="multipart/form-data">
+        <div class="card card-birth mx-auto list-group-item">
+
+            <div class="col-lg-12 text-center mt-1 mb-4">
+                <span id="font-user" class="fa fa-user-circle"></span>
+
+            </div>
+            <div class="mb-5">
+                <h3 class="text-center">Birth Certificate Registration</h3>
+
+                <p class="text-center"><small class="text-warning">Please enter your details below</small></p>
+            </div>
+
+            <?php
+            include 'submit.php';
+            // $sub = inc();
+            ?>
+            <form class="form-birth" action="payment.php" method="post" enctype="multipart/form-data">
 
                 <div class='row'>
-                    <div class='col-md-6'>
+                    <div class='col-lg-4'>
                         <div class="form-group">
-                            <label for="email" class="text-bold"><b>First Name</b></label> <input type="text" class="input form-control" id="firstName" name="firstName" placeholder="Enter First Name" autocomplete="off" required />
+                            <label for="pob"><b>First Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="pob" name="firstname" placeholder="Enter First Name" autocomplete="off" required />
                         </div>
                     </div>
 
-                    <div class='col-md-6'>
+
+
+                    <div class='col-lg-4'>
                         <div class="form-group">
-                            <label for="email"><b>Last Name</b></label> <input type="text" class="input form-control" id="lastName" name="lastName" placeholder="Enter Last Name" autocomplete="off" required />
+                            <label for="aoh"><b>Middle Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="middlename" placeholder="Middle Name" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Surname</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="surname" placeholder="Surname" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-6'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Weight</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="weight" placeholder="Weight" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-6'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Height</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="height" placeholder="Height" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="pob"><b>Place of Birth</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="pob" name="pob" placeholder="Enter Place of Birth" autocomplete="off" required />
+                        </div>
+                    </div>
+
+
+
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Street</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="street" placeholder="Street" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>City</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="city" placeholder="City" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-6'>
+                        <div class="form-group">
+                            <label for="aoh"><b>State</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="state" placeholder="State" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-6'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Zip Code</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="aoh" placeholder="Zipcode" autocomplete="off" required />
                         </div>
                     </div>
                 </div>
                 <div class='row'>
-                    <div class='col-md-6'>
+                    <div class='col-lg-6'>
                         <div class="form-group">
-                            <label for="email"><b>Email Address</b></label> <input type="email" class="input form-control" id="email" name="email" placeholder="Enter Email Address" autocomplete="off" required />
+                            <label for="noh"><b>Name of Hospital</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="noh" name="noh" placeholder="Enter Name of Hospital" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-6'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Address of Hospital</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="aoh" placeholder="Enter Address of Hospital" autocomplete="off" required />
                         </div>
                     </div>
 
-                    <div class='col-md-6'>
+
+                </div>
+                <div class='row'>
+                    <div class='col-lg-6'>
                         <div class="form-group">
-                            <label for="phone"><b>Phone</b></label> <input type="text" class="input form-control" id="phone" name="phone" placeholder="Enter Phone Number" autocomplete="off" required />
+                            <label for="fname"><b>Father's Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="fname" name="fname" placeholder="Enter Father's Name" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-6'>
+                        <div class="form-group">
+                            <label for="mname"><b>Mother's Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="mname" name="mname" placeholder="Enter Mother's Name" autocomplete="off" required />
+                        </div>
+                    </div>
+
+                    <div class='col-lg-6'>
+                        <div class="form-group">
+                            <label for="supportdoc"><b>Supporting Document</b><i class="fa text-warning">*</i></label> <input type="file" class="input form-control-file" id="supportdoc" name="supportdoc" placeholder="Enter Last Name" autocomplete="off" required />
                         </div>
                     </div>
                 </div>
                 <div class='row'>
-                    <div class='col-md-6'>
+                    <div class='col-lg-6'>
                         <div class="form-group">
-                            <label for="password"><b>Password</b></label> <input type="password" class="input form-control" id="password" name="password" placeholder="Enter Password" autocomplete="off" required />
+                            <label for="coloption"><b>Collection Option</b><i class="fa text-warning">*</i></label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Pickup at Location
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Delivery
+                                </label>
+                            </div>
                         </div>
                     </div>
 
-                    <div class='col-md-6'>
-                        <div class="form-group">
-                            <label for="confirmpassword"><b>Confirm Password</b></label> <input type="password" class="input form-control" id="password" name="password" placeholder="Retype Password" autocomplete="off" required />
-                        </div>
+
+                    <?php
+                    $_SESSION['fname'] = $_POST['fname'];
+                    ?>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-4">
+                        <button type="submit" name="submit" class="btn btn-info mx-auto text-bold">
+                            Pay ($50.00) <span class="fa fa-money-check-alt"></span>
+                        </button>
                     </div>
                 </div>
-
-
-
-
-
-                <div class="form-holder form-holder-2 pull-left">
-
-                    <a class="btn btn-primary" href="#">Back
-                    </a>
-                </div>
-                <div class="form-holder form-holder-2 pull-right">
-                    <a class="btn btn-primary" href="#">Submit
-                    </a>
-
-                </div>
-
-
             </form>
         </div>
     </div>
@@ -89,6 +178,3 @@
         $("#wrapper").toggleClass("toggled");
     });
 </script>
-</body>
-
-</html>

@@ -1,6 +1,5 @@
 <?php include 'inc/header.php'; ?>
 
-<?php include 'inc/side-bar.php'; ?>
 <!-- /#sidebar-wrapper -->
 
 <!-- Page Content -->
@@ -119,20 +118,23 @@
                 <hr />
 
                 <h4>Address Details</h4>
+                <div class="row">
+
+                </div>
                 <div class='row'>
                     <div class='col-lg-4'>
                         <div class="form-group">
-                            <label for="mname"><b>City</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="mname" name="mname" placeholder="Enter Mother's Name" autocomplete="off" required />
+                            <label for="mname"><b>City</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="mname" name="mname" placeholder="Enter City Name" autocomplete="off" required />
                         </div>
                     </div>
                     <div class='col-lg-4'>
                         <div class="form-group">
-                            <label for="fname"><b>State</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="fname" name="fname" placeholder="Enter Father's Name" autocomplete="off" required />
+                            <label for="fname"><b>State</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="fname" name="fname" placeholder="Enter State Name" autocomplete="off" required />
                         </div>
                     </div>
                     <div class='col-lg-4'>
                         <div class="form-group">
-                            <label for="fname"><b>Zip Code</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="fname" name="fname" placeholder="Enter Father's Name" autocomplete="off" required />
+                            <label for="fname"><b>Zip Code</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="fname" name="fname" placeholder="Enter Zip Code" autocomplete="off" required />
                         </div>
                     </div>
                     <div class='col-lg-4'>
@@ -189,9 +191,11 @@
 
 
                 <div class="row mt-3">
-                    <button type="button" class="btn btn-info mx-auto text-bold" value="" style="padding: 10px 30px; border-radius: 0px;">
-                        Pay ($50.00)
-                    </button>
+                    <div class="col-lg-4">
+                        <a href="payment.php"><button type="button" class="btn btn-info mx-auto text-bold" value="" style="padding: 10px 30px;; border-radius: 0px;">
+                                Pay ($50.00)
+                            </button></a>
+                    </div>
                 </div>
             </form>
         </div>

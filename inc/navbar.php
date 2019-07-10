@@ -1,4 +1,9 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#BF0A30;">
+<!--most top info -->
+<!--<div style="height: 40px; background: #f2f9ee"></div> data-toggle="sticky-onscroll" -->
+<!-- End most top info -->
+<?php //session_start(); style="background: #BF0A30;"
+?>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #fff; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);">
     <div class="container">
         <a class="navbar-brand" href="#"><img src="images/logo-nav.png" id="logo-nav" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,42 +13,63 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php#">Home</a>
+                    <a class="nav-link" style="color: #333;" href="index.php#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Track Application</a>
+                    <a class="nav-link" style="color: #333;" href="#">Track Application</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="faq.php#">FAQs</a>
+                    <a class="nav-link" style="color: #333;" href="faq.php#">FAQs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.php">Services</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #333;" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+
+                        <div class="dropdown-content">
+                            <a href="birth_cert.php#" class="list-group-item list-group-item-action">Birth Certificate</a>
+                            <a href="marriage_cert.php" class="list-group-item list-group-item-action">Marriage Certificate</a>
+                            <a href="epass.php#" class="list-group-item list-group-item-action">E-Passport</a>
+                            <a href="#" class="list-group-item list-group-item-action">Education</a>
+                            <a href="#" class="list-group-item list-group-item-action">Tourism</a>
+                            <a href="#" class="list-group-item list-group-item-action">Agriculture</a>
+                            <a href="#" class="list-group-item list-group-item-action">National ID</a>
+                            <a href="#" class="list-group-item list-group-item-action">Traffic Fines</a>
+                            <a href="#" class="list-group-item list-group-item-action">Health Insurance</a>
+                            <a href="#" class="list-group-item list-group-item-action">Media</a>
+                            <a href="#" class="list-group-item list-group-item-action">Transportation</a>
+                            <a href="#" class="list-group-item list-group-item-action">Local Government</a>
+                            <a href="#" class="list-group-item list-group-item-action">Land</a>
+                            <a href="#" class="list-group-item list-group-item-action">Immigration</a>
+                            <a href="#" class="list-group-item list-group-item-action">Police</a>
+                            <a href="#" class="list-group-item list-group-item-action">Prosecution</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.php#">About Us</a>
+                    <a class="nav-link" style="color: #333;" href="about.php#">About Us</a>
                 </li>
             </ul>
 
             <ul class="navbar-nav ml-auto text-center">
                 <?php if (isset($_SESSION['user_id'])) : ?>
                     <li class="nav-item text-center">
-                        <a class="nav-link" href="#">Welcome <?php echo $_SESSION['user_name']; ?></a>
+                        <a class="nav-link" style="color: #333;" href="#">Welcome <?php echo $_SESSION['user_name']; ?></a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link" href="#">Logout</a>
+                        <a class="nav-link" style="color: #333;" href="#">Logout</a>
                     </li>
                 <?php else : ?>
 
                     <li class="nav-item text-center">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModal1">
-                            <a class="nav-link" href="signup.php">Sign Up</a>
+                            <a class="nav-link" style="color: #333;" href="signup.php">Sign Up</a>
                         </button>
                     </li>
                     <li class="nav-item text-center">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModal-login">
-                            <a class="nav-link" href="#">Log In</a>
+                            <a class="nav-link" style="color: #333;" href="#">Log In</a>
                         </button>
                     </li>
                 <?php endif; ?>
@@ -52,12 +78,14 @@
         </div>
     </div>
 </nav>
-<br><br><br>
-<div class="container">
+
+<div class="">
     <div class="main">
 
 
         <!----******************* LOG IN MODAL *********************------>
+
+
 
         <div class="modal fade" id="exampleModal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLogin" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -69,7 +97,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form style="max-width:450px;margin:auto">
+                        <form action="login-submit.php" method="post" style="max-width:450px;margin:auto">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email</label>
                                 <div class="input-icons">
@@ -77,7 +105,7 @@
                                         <i class="fa fa-envelope icon">
                                         </i>
                                     </button>
-                                    <input class="input input-field" type="text" autocomplete="off" placeholder="Enter Email" required />
+                                    <input class="input input-field" type="text" name="login-email" autocomplete="off" placeholder="Enter Email" required />
                                 </div>
                             </div>
 
@@ -88,13 +116,13 @@
                                         <i class="fa fa-key icon">
                                         </i>
                                     </button>
-                                    <input class="input input-field" type="password" autocomplete="off" placeholder="Enter Password" required />
+                                    <input class="input input-field" type="password" autocomplete="off" name="login-password" placeholder="Enter Password" required />
                                 </div>
                             </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-login" style="width: 100%;">LOG IN</button>
+                            </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-login" style="width: 100%;">LOG IN</button>
                     </div>
                 </div>
             </div>

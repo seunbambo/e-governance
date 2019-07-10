@@ -1,74 +1,208 @@
-<?php include 'inc/header.php'; ?>
+<?php
 
-<?php include 'inc/side-bar.php'; ?>
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+$accessmail = 'seun.bambo@cg-infotech.com';
+if (empty($_SESSION)) {
+    header("Location: signup.php");
+    exit();
+} else {
+    include 'inc/header.php';
+}
+//include 'inc/header.php';
+?>
+
 <!-- /#sidebar-wrapper -->
 
 <!-- Page Content -->
 <div id="page-content-wrapper">
 
 
-    <div class="container-fluid mt-5">
-        <h1 class="mt-4">Marriage Certificate</h1>
-        <div class="card mt-5 mx-auto">
+    <div class="container-fluid mt-5 mb-5">
 
-            <form class="form-register" action="" method="post" enctype="multipart/form-data">
+        <div class="card card-birth mx-auto list-group-item">
 
+            <div class="col-lg-12 text-center mt-1 mb-4">
+                <span id="font-user" class="fa fa-user-circle"></span>
+
+            </div>
+            <div class="mb-5">
+                <h3 class="text-center">Marriage Certificate</h3>
+
+                <p class="text-center"><small class="text-warning">Please enter your details below</small></p>
+            </div>
+
+            <?php
+            include 'marriage-submit.php';
+            // $sub = inc();
+            echo $_SESSION['email'];
+            ?>
+            <form class="form-birth" action="marriage-pay.php" method="post" enctype="multipart/form-data">
+
+                <h3>Husband Details</h3>
                 <div class='row'>
-                    <div class='col-md-6'>
+                    <div class='col-lg-4'>
                         <div class="form-group">
-                            <label for="email" class="text-bold"><b>First Name</b></label> <input type="text" class="input form-control" id="firstName" name="firstName" placeholder="Enter First Name" autocomplete="off" required />
-                        </div>
-                    </div>
-
-                    <div class='col-md-6'>
-                        <div class="form-group">
-                            <label for="email"><b>Last Name</b></label> <input type="text" class="input form-control" id="lastName" name="lastName" placeholder="Enter Last Name" autocomplete="off" required />
-                        </div>
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-md-6'>
-                        <div class="form-group">
-                            <label for="email"><b>Email Address</b></label> <input type="email" class="input form-control" id="email" name="email" placeholder="Enter Email Address" autocomplete="off" required />
-                        </div>
-                    </div>
-
-                    <div class='col-md-6'>
-                        <div class="form-group">
-                            <label for="phone"><b>Phone</b></label> <input type="text" class="input form-control" id="phone" name="phone" placeholder="Enter Phone Number" autocomplete="off" required />
-                        </div>
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-md-6'>
-                        <div class="form-group">
-                            <label for="password"><b>Password</b></label> <input type="password" class="input form-control" id="password" name="password" placeholder="Enter Password" autocomplete="off" required />
-                        </div>
-                    </div>
-
-                    <div class='col-md-6'>
-                        <div class="form-group">
-                            <label for="confirmpassword"><b>Confirm Password</b></label> <input type="password" class="input form-control" id="password" name="password" placeholder="Retype Password" autocomplete="off" required />
+                            <label for="pob"><b>Title</b><i class="fa text-warning">*</i></label> <select name="title" id="">
+                                <option value="Mr">Mr</option>
+                                <option value="Mr">Master</option>
+                            </select>
                         </div>
                     </div>
                 </div>
 
 
-
-
-
-                <div class="form-holder form-holder-2 pull-left">
-
-                    <a class="btn btn-primary" href="#">Back
-                    </a>
+                <div class="row">
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Surname</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="hsurname" placeholder="Surname" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>First Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="hfname" placeholder="First Name" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Middle Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="hmname" placeholder="Middle Name" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Religion</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="hreligion" placeholder="Surname" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Marital Status Before Marriage</b><i class="fa text-warning">*</i></label>
+                            <select name="marriagestatus" id="">
+                                <option value="">Single</option>
+                                <option value="">Married</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-holder form-holder-2 pull-right">
-                    <a class="btn btn-primary" href="#">Submit
-                    </a>
+                <h5>Permanent Address</h5>
+                <div class="row">
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Street</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="street" placeholder="Street" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>City</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="city" placeholder="City" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>State</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="state" placeholder="State" autocomplete="off" required />
+                        </div>
+                    </div>
+                </div>
+                <h3>Wife Details</h3>
+                <div class="row">
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Surname</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="wsurname" placeholder="Surname" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>First Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="wfname" placeholder="First Name" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Middle Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="wmname" placeholder="Middle Name" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Religion</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="wreligion" placeholder="Surname" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Marital Status Before Marriage</b><i class="fa text-warning">*</i></label>
+                            <select name="marriagestatus" id="">
+                                <option value="">Single</option>
+                                <option value="">Married</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <h5>Wife Permanent Address</h5>
+                <div class="row">
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Street</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="street" placeholder="Street" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>City</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="city" placeholder="City" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>State</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="state" placeholder="State" autocomplete="off" required />
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3>Witness 1</h3>
+                <div class="row">
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Surname</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="witnesssurname" placeholder="Surname" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>First Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="witnessfname" placeholder="First Name" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Middle Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="witnessmname" placeholder="Middle Name" autocomplete="off" required />
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <h3>Witness 2</h3>
+                <div class="row">
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Surname</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="witness2surname" placeholder="Surname" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>First Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="witness2fname" placeholder="First Name" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <div class='col-lg-4'>
+                        <div class="form-group">
+                            <label for="aoh"><b>Middle Name</b><i class="fa text-warning">*</i></label> <input type="text" class="input form-control" id="aoh" name="witness2mname" placeholder="Middle Name" autocomplete="off" required />
+                        </div>
+                    </div>
+
 
                 </div>
 
 
+                <div class="row mt-3">
+                    <div class="col-lg-4">
+                        <button type="submit" name="submit" class="btn btn-info mx-auto text-bold">
+                            Pay ($50.00) <span class="fa fa-money-check-alt"></span>
+                        </button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
@@ -89,6 +223,3 @@
         $("#wrapper").toggleClass("toggled");
     });
 </script>
-</body>
-
-</html>

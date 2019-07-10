@@ -1,4 +1,13 @@
-<?php include 'inc/header.php'; ?>
+<?php
+session_start();
+
+include 'inc/header.php';
+
+include 'signup-submit.php';
+
+
+
+?>
 
 
 <div class="page-content">
@@ -18,7 +27,7 @@
                 <div class="card-header">
                     <h3 class="text-center">Sign Up</h3>
                 </div>
-                <form class="form-register" action="" method="post" enctype="multipart/form-data">
+                <form class="form-register" action="signup-submit.php" method="post" enctype="multipart/form-data">
 
                     <div class='row'>
                         <div class='col-md-6'>
@@ -62,17 +71,16 @@
 
 
 
-
-
                     <div class="form-holder form-holder-2 pull-left">
-
-                        <a class="btn btn-primary" href="#">Back
-                        </a>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal-login" style="border-radius: 0px;"> Login </button>
                     </div>
-                    <div class="form-holder form-holder-2 pull-right">
-                        <a class="btn btn-primary" href="#">Submit
-                        </a>
 
+
+
+
+
+                    <div class="form-holder form-holder-2 pull-right">
+                        <button type="submit" class="btn btn-info" style="border-radius: 0px;"> Submit </button>
                     </div>
 
 
@@ -81,5 +89,3 @@
         </div>
     </div>
 </div>
-
-<?php include 'inc/footer.php'; ?>

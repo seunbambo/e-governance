@@ -12,9 +12,9 @@
 <div id="panel">Hello world!</div>
 -->
 
-<h1 class="heading">FAQ</h1>
+<h1 class="heading">FAQ's</h1>
 
-    <div id="accordion">
+<div id="accordion">
   <div class="card">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
@@ -41,7 +41,7 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
         <p>Trading License service allows any person who owns a profit-oriented business in Liberia to apply for a trading license.</p>
-    </div>
+      </div>
     </div>
   </div>
   <div class="card">
@@ -55,7 +55,7 @@
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
       <div class="card-body">
         <p>Applicants can register for the Driving License Practical test (Supplementary) using this service. The purpose of this registration is to upgrade from the current driving license. Before registering for the Supplementary Driving test, you must possess a Definitive Driving license.</p>
-    </div>
+      </div>
     </div>
   </div>
   <div class="card">
