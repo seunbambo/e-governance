@@ -1,9 +1,9 @@
 <!--most top info -->
 <!--<div style="height: 40px; background: #f2f9ee"></div> data-toggle="sticky-onscroll" -->
 <!-- End most top info -->
-<?php 
+<?php
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
-session_start(); 
+session_start();
 //style="background: #BF0A30;"
 ?>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #fff; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);">
@@ -82,51 +82,52 @@ session_start();
     </div>
 </nav>
 
-<div class="">
-    <div class="main">
+
+<div class="main">
 
 
-        <!----******************* LOG IN MODAL *********************------>
+    <!----******************* LOG IN MODAL *********************------>
 
 
 
-        <div class="modal fade" id="exampleModal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLogin" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title font-weight-bold" id="exampleModalLogin"></h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="login-submit.php" method="post" style="max-width:450px;margin:auto">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email</label>
-                                <div class="input-icons">
-                                    <button type="button" class="button-icon">
-                                        <i class="fa fa-envelope icon">
-                                        </i>
-                                    </button>
-                                    <input class="input input-field" type="text" name="login-email" autocomplete="off" placeholder="Enter Email" required />
-                                </div>
+    <div class="modal fade" id="exampleModal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLogin" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title font-weight-bold" id="exampleModalLogin"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="login-submit.php" method="post" style="max-width:450px;margin:auto">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <div class="input-icons">
+                                <button type="button" class="button-icon">
+                                    <i class="fa fa-envelope icon">
+                                    </i>
+                                </button>
+                                <input class="input input-field" type="text" name="login-email" autocomplete="off" placeholder="Enter Email" required />
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Password</label>
-                                <div class="input-icons">
-                                    <button type="button" class="button-icon">
-                                        <i class="fa fa-key icon">
-                                        </i>
-                                    </button>
-                                    <input class="input input-field" type="password" autocomplete="off" name="login-password" placeholder="Enter Password" required />
-                                </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Password</label>
+                            <div class="input-icons">
+                                <button type="button" class="button-icon">
+                                    <i class="fa fa-key icon">
+                                    </i>
+                                </button>
+                                <input class="input input-field" type="password" autocomplete="off" name="login-password" placeholder="Enter Password" required />
                             </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-login" style="width: 100%;">LOG IN</button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-login" style="width: 100%;">LOG IN</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+    <br>
