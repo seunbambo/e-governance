@@ -3,20 +3,23 @@ session_start();
 require 'inc/header.php'; ?>
 
 
+
+
+<section style="background: #BF0A30; background-image: url('images/logo4.png'); background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-attachment: fixed; padding-bottom: 30px;">
+    <div class="" style="width: 100%; background-image: url('../images/logo.png'); Center and scale the image nicely background-position: center; background-repeat: no-repeat; background-size: 35%; background-attachment: fixed;">
 <?php
 if (isset($_SESSION['email'])) {
-    $_SESSION['email'];
+    //echo $_SESSION['email'];
 }
 ?>
-
-
-<section style="background: #BF0A30; padding-bottom: 30px;">
-    <div class="banner" style="width: 100%; background-image: url('../images/logo.png'); Center and scale the image nicely background-position: center; background-repeat: no-repeat; background-size: 35%; background-attachment: fixed;">
         <div class="jumbotron jumbotron-fluid text-center">
-            <div class="container">
+            <div class="">
                 <!--<h1 class="display-3">E-Governance</h1>
                 <p>Welcome to E-Governance</p>-->
-                <img src="images/logo.png" alt="logo" style="height:90px;">
+                <img class="mt-3 mb-3" src="images/logo.png" alt="logo" style="height:90px;">
             </div>
 
             <h1 class="display-5 text-light">E-Governance for Liberia</h1>

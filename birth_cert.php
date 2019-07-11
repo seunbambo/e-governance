@@ -16,7 +16,10 @@ if (empty($_SESSION)) {
 <!-- Page Content -->
 <div id="page-content-wrapper">
 
+<?php 
+    //echo $_SESSION['email'];
 
+?>
     <div class="container-fluid mt-5 mb-5">
 
         <div class="card card-birth mx-auto list-group-item">
@@ -33,6 +36,7 @@ if (empty($_SESSION)) {
 
             <?php
             include 'submit.php';
+            //echo $_SESSION['email'];
             // $sub = inc();
             ?>
             <form class="form-birth" action="payment.php" method="post" enctype="multipart/form-data">

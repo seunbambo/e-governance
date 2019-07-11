@@ -78,7 +78,7 @@ include 'submit.php';
                                         <div class='row'>
                                             <div class='col-lg-6'>
                                                 <div class="form-group">
-                                                    <label for="sel1"><b>Expiry Date</b></label> <select class="form-control input" id="expMonth" name="expMonth" required>
+                                                    <label for="sel1"><b>Expiry Date</b></label> <select class="form-control input-exp" id="expMonth" name="expMonth" required>
                                                         <option value="" disabled selected>Select Month</option>
                                                         <option value="1">Jan</option>
                                                         <option value="2">Feb</option>
@@ -98,7 +98,7 @@ include 'submit.php';
                                             </div>
                                             <div class='col-lg-6'>
                                                 <div class="form-group">
-                                                    <label for="sel1">&nbsp;</label> <select class="form-control input" id="expYear" name="expYear" required>
+                                                    <label for="sel1">&nbsp;</label> <select class="form-control input-exp" id="expYear" name="expYear" required>
                                                         <option value="" disabled selected>Select Year</option>
                                                         <?php
                                                         $year = 2019;
@@ -134,7 +134,7 @@ include 'submit.php';
 
 
 
-                            <form class="form-register mx-auto" action="${ctx}/thanks" method="post">
+                            <form class="form-register mx-auto" action="" method="post">
 
                                 <div id="form-total">
                                     <!-- <section> -->
@@ -142,7 +142,7 @@ include 'submit.php';
                                         <form action="">
 
                                             <div class='row'>
-                                                <i class="fa fa-wallet"></i>
+                                                <!--<i class="fa fa-wallet"></i>
                                                 <div class='col-lg-6'>
                                                     <div class="form-group">
                                                         <label for="email"><b>Reference Number</b><i class="fa text-warning">*</i></label> <input type="text" class="form-control input" id="holder" name="holder" autocomplete="off" placeholder="Enter Reference Number" required />
@@ -171,6 +171,10 @@ include 'submit.php';
                                                 </a>
                                             </div>
                                         </form>
+                                                    -->
+                                                    <div class="alert alert-success" role="alert">
+                                                    Please proceed to the bank to make payment.
+                                                </div>
 
 
 

@@ -1,7 +1,10 @@
 <!--most top info -->
 <!--<div style="height: 40px; background: #f2f9ee"></div> data-toggle="sticky-onscroll" -->
 <!-- End most top info -->
-<?php //session_start(); style="background: #BF0A30;"
+<?php 
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+session_start(); 
+//style="background: #BF0A30;"
 ?>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #fff; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);">
     <div class="container">
@@ -28,7 +31,7 @@
                         <div class="dropdown-content">
                             <a href="birth_cert.php#" class="list-group-item list-group-item-action">Birth Certificate</a>
                             <a href="marriage_cert.php" class="list-group-item list-group-item-action">Marriage Certificate</a>
-                            <a href="epass.php#" class="list-group-item list-group-item-action">E-Passport</a>
+                            <a href="#" class="list-group-item list-group-item-action">E-Passport</a>
                             <a href="#" class="list-group-item list-group-item-action">Education</a>
                             <a href="#" class="list-group-item list-group-item-action">Tourism</a>
                             <a href="#" class="list-group-item list-group-item-action">Agriculture</a>

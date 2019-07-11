@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 if (isset($_POST['firstName'])) {
     $_SESSION['firstName'] = $_POST['firstName'];
     $_SESSION['lastName'] = $_POST['lastName'];

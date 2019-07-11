@@ -10,6 +10,8 @@ if (empty($_SESSION)) {
     include 'inc/header.php';
 }
 //include 'inc/header.php';
+    //echo $_SESSION['email'];
+
 ?>
 
 <!-- /#sidebar-wrapper -->
@@ -35,7 +37,7 @@ if (empty($_SESSION)) {
             <?php
             include 'marriage-submit.php';
             // $sub = inc();
-            echo $_SESSION['email'];
+            //echo $_SESSION['email'];
             ?>
             <form class="form-birth" action="marriage-pay.php" method="post" enctype="multipart/form-data">
 

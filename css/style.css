@@ -19,7 +19,9 @@ body {
   background-repeat: no-repeat;
   background-size: 35%;
   background-attachment: fixed;
+  z-index: 999999;
 }
+
 
 .banner {
   background-image: url("../images/logo.png");
@@ -140,8 +142,8 @@ body {
 }
 
 .heading {
-  padding-bottom: 30px;
-  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 .jumbotron {
@@ -157,6 +159,13 @@ body {
   width: 65vw;
   padding: 30px 70px;
   margin-top: 90px;
+}
+.cards {
+  background: rgba(238, 238, 238, 0.404);
+  border: 1px solid rgba(238, 238, 238, 0.301);
+  width: 65vw;
+  padding: 10px 70px;
+  
 }
 
 .background {
