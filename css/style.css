@@ -184,12 +184,12 @@ body {
 
 .btn-custom {
   background: transparent;
-  color: #aaa;
+  color: #333;
   -webkit-transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
   -moz-transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
   -o-transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
   transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
-  border: 1px solid #cea6a6;
+  border: 1px solid #eee;
 
   padding: 0px;
   margin: 0 5px;
@@ -259,7 +259,7 @@ select {
   font-size: 0.83rem;
 }
 .input-search {
-  color: #333;
+  color: #002868;
   border: 2px solid #eee;
   /*background: rgba(255, 255, 255, 0.103);*/
   width: 100%;
