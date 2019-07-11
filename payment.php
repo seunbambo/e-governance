@@ -41,8 +41,8 @@ include 'submit.php';
                             <form class="form-register mx-auto" action="" method="post">
                                 <?php include 'submit.php';
                                 $fnames = $_SESSION['aoh'];
-                                print_r($fnames);
-                                print_r($_POST['aoh']);
+                                // print_r($fnames);
+                                // print_r($_POST['aoh']);
                                 ?>
                                 <c:if test="${uid!=''}">
                                     <input class="input" type="hidden" value="${uid}" name="uid">
@@ -172,12 +172,13 @@ include 'submit.php';
                                             </div>
                                         </form>
                                                     -->
-                                                    <div class="alert alert-success" role="alert">
+                                                <div class="alert alert-success" role="alert">
                                                     Please proceed to the bank to make payment.
                                                 </div>
 
 
 
+                                            </div>
                                     </div>
                                 </div>
 
