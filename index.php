@@ -9,12 +9,12 @@ require 'inc/header.php'; ?>
   background-repeat: no-repeat;
   background-size: 35%;
   background-attachment: fixed; padding-bottom: 30px;">
-    <div class="" style="width: 100%; background-image: url('../images/logo.png'); Center and scale the image nicely background-position: center; background-repeat: no-repeat; background-size: 35%; background-attachment: fixed;">
-<?php
-if (isset($_SESSION['email'])) {
-    //echo $_SESSION['email'];
-}
-?>
+    <div class="" style="width: 100%;">
+        <?php
+        if (isset($_SESSION['email'])) {
+            //echo $_SESSION['email'];
+        }
+        ?>
         <div class="jumbotron jumbotron-fluid text-center">
             <div class="">
                 <!--<h1 class="display-3">E-Governance</h1>
@@ -28,7 +28,7 @@ if (isset($_SESSION['email'])) {
 
 
             <div class="col-lg-6 mx-auto">
-                <input type="text" class="input" placeholder="Search for a service" style="border-radius: 7px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);"><span></span>
+                <input type="text" class="input-search" placeholder="Search for a service" style=""><span></span>
             </div>
 
             <h3 class="text-center mt-1 mb-3" style="padding-top: 50px; color: #fff;">Popular Services</h3>
