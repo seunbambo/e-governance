@@ -22,7 +22,7 @@ include 'signup-submit.php';
                 });
             </script>
 
-
+            <br><br>
             <div class="card mt-5 mx-auto">
                 <div class="card-header">
                     <h3 class="text-center">Sign Up</h3>
