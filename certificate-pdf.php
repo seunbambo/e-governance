@@ -44,53 +44,7 @@ class myPDF extends FPDF
         //$this->image('images/birth-certificate.png', 13, -3, 270);
         $this->Cell(80);
         $this->SetFont('Courier', 'BI', 17);
-
-        //$this->cell(120, 20, 'Charles', 0, 300, 'C');
-        // $this->cell(40, 73, 'Angela', 0, 0, 'C');
-        // $this->cell(120, 73, 'Joseph', 0, 0, 'C');
-        // $this->cell(-280, 112, '09-07-2019', 0, 0, 'C');
-        // $this->cell(440, 112, '12:52 pm', 0, 0, 'C');
-        // $this->cell(70, 10, '50kg', 0, 0, 'C');
-        // $this->cell(120, 50, '6\'1\"', 0, 0, 'C');
-        // $this->Ln(15);
     }
-
-    // function viewTable()
-    // {
-    //     require 'submit.php';
-    //     $this->SetFont('Times', '', 17);
-
-
-    //     //for ($i = 0; $i < 2; $i++) {
-    //     //echo $i;
-
-    //     //$subscribedServices = json_decode($output[0])->data[$i];
-
-
-
-
-
-
-
-
-
-    //     $this->cell(135, 10, $fname, 1, 0, 'L');
-
-    //     $this->Ln();
-    //     //}
-    // }
-    // function body()
-    // {
-    //     $this->Cell(80);
-    //     $this->SetFont('Courier', 'BI', 17);
-
-    //     //$this->cell(120, 20, 'Charles', 0, 300, 'C');
-    //     $this->cell(40, 70, '50kg', 0, 0, 'C');
-    //     $this->cell(120, 114, '6\'1\"', 0, 0, 'C');
-    //     //$this->cell(-280, 172, 'dffgdg', 0, 0, 'C');
-    //     //$this->cell(440, 152, 'dffffgdgd', 0, 0, 'C');
-    //     $this->Ln(15);
-    // }
 }
 
 
@@ -115,4 +69,4 @@ $message .= '<br /><br /><br />';
 $message .= '<p style="color:blue">E-Governance.</p>';
 $message .= '</body></html>';
 
-//mail($_SESSION['email'], "E-Governance Marriage Certificate", $message, $headers);
+mail($_SESSION['email'], "E-Governance Marriage Certificate", $message, $headers);
