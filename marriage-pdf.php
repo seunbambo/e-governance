@@ -20,9 +20,9 @@ class myPDF extends FPDF
         include 'marriage-submit.php';
         $this->cell(25, 166, $_SESSION['hfname'], 0, 0, 'C');
         $this->cell(180, 166, $_SESSION['wfname'], 0, 0, 'C');
-        $this->cell(-160, 224, '2019', 0, 0, 'C');
-        $this->cell(-120, 224, '10th', 0, 0, 'C');
-        $this->cell(245, 224, 'July', 0, 0, 'C');
+        $this->cell(-160, 224, date('Y'), 0, 0, 'C');
+        $this->cell(-120, 224, date('dS'), 0, 0, 'C');
+        $this->cell(245, 224, date('F'), 0, 0, 'C');
         $this->cell(-110, 277, $_SESSION['witnessfname'], 0, 0, 'C');
         $this->cell(-110, 277, $_SESSION['witness2fname'], 0, 0, 'C');
         //$this->cell(-60, 224, 'July', 0, 0, 'C');

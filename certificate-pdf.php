@@ -12,7 +12,7 @@ class myPDF extends FPDF
     {
 
         //$fname = print_r($fname);
-        $this->image('images/birth-certificate.png', 13, -3, 250);
+        $this->image('images/birth-certificate.png', 13, -3, 270);
         $this->Cell(80);
         $this->SetFont('Courier', 'BI', 17);
         include 'submit.php';
@@ -21,8 +21,8 @@ class myPDF extends FPDF
         $this->cell(-50, 115, $_SESSION['surname'], 0, 0, 'C');
         $this->cell(-40, 172, $_SESSION['fname'], 0, 0, 'C');
         $this->cell(-120, 172, $_SESSION['mname'], 0, 0, 'C');
-        $this->cell(120, 210, date('12-2-2019'), 0, 0, 'C');
-        $this->cell(40, 210, '5:52', 0, 0, 'C');
+        $this->cell(120, 210, date('d-m-Y'), 0, 0, 'C');
+        $this->cell(40, 210, date('H:i:s'), 0, 0, 'C');
         $this->cell(-35, 247, $_SESSION['height'], 0, 0, 'C');
         $this->cell(-130, 247, $_SESSION['weight'], 0, 0, 'C');
         $this->cell(202, 281, $_SESSION['pob'], 0, 0, 'C');
@@ -107,7 +107,7 @@ $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'From: E-Governance';
 $message = '<html><body>';
 $message .= '<p>Dear User,';
-$message .= '<br /><br /><br /><br />';
+$message .= '<br /><br /><br />';
 $message .= 'Your marriage certificate creation was successful';
 //$message .= '<p>Kindly click <b><a href="' . $url . '" style="color:red;">this link</a></b> to change your password or copy the link below to your browser: </p>';
 //$message .= $url;
@@ -115,4 +115,4 @@ $message .= '<br /><br /><br />';
 $message .= '<p style="color:blue">E-Governance.</p>';
 $message .= '</body></html>';
 
-mail($_SESSION['email'], "E-Governance Marriage Certificate", $message, $headers);
+//mail($_SESSION['email'], "E-Governance Marriage Certificate", $message, $headers);
