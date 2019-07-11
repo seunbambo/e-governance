@@ -13,15 +13,13 @@ body {
   /*background: #bf0a30;*/
   color: #002868;
   height: 100%;
-  /*background-image: url("../images/logo4.png");
+  background-image: url("../images/logo4.png");
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: 35%;
   background-attachment: fixed;
-  z-index: 999999;
 }
-
 
 .banner {
   background-image: url("../images/logo.png");
@@ -95,9 +93,10 @@ body {
 }
 
 .dropdown-content a {
-  color: #eee;
-  padding: 0px 16px;
+  color: #ccc;
+  padding: 2px 16px;
   text-decoration: none;
+  font-size: 0.9rem;
   display: block;
   border: 1px solid #aaa;
   background-color: #382424d8;
@@ -106,7 +105,7 @@ body {
 .dropdown-content a:hover {
   padding-left: 13px;
   color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   background-color: #382424fa;
   -webkit-transition: background 0.2s ease-in-out, padding 0.2s ease-in-out,
     background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -116,14 +115,10 @@ body {
     background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background 0.2s ease-in-out, padding 0.2s ease-in-out,
     background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  border: 1px solid #fff;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
 }
 
 .footer {
@@ -165,7 +160,6 @@ body {
   border: 1px solid rgba(238, 238, 238, 0.301);
   width: 65vw;
   padding: 10px 70px;
-  
 }
 
 .background {
@@ -263,6 +257,17 @@ select {
   text-align: left;
   border-radius: 0px;
   font-size: 0.83rem;
+}
+.input-search {
+  color: #333;
+  border: 2px solid #eee;
+  /*background: rgba(255, 255, 255, 0.103);*/
+  width: 100%;
+  padding: 12px 20px;
+  text-align: left;
+  border-radius: 7px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
 }
 .input-exp {
   color: #002868;
