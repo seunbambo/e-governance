@@ -16,17 +16,17 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #333;" href="index.php#">Home</a>
+                    <a class="nav-link" style="color: #002868;" href="index.php#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #333;" href="#">Track Application</a>
+                    <a class="nav-link" style="color: #002868;" href="#">Track Application</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #333;" href="faq.php#">FAQs</a>
+                    <a class="nav-link" style="color: #002868;" href="faq.php#">FAQs</a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="nav-link dropdown-toggle" style="color: #333;" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+                        <a class="nav-link dropdown-toggle" style="color: #002868;" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
 
                         <div class="dropdown-content">
                             <a href="birth_cert.php#" class="list-group-item list-group-item-action">Birth Certificate</a>
@@ -49,30 +49,33 @@ session_start();
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #333;" href="about.php#">About Us</a>
+                    <a class="nav-link" style="color: #002868;" href="about.php#">About Us</a>
                 </li>
             </ul>
 
             <ul class="navbar-nav ml-auto text-center">
-                <?php if (isset($_SESSION['user_id'])) : ?>
+                <?php if (isset($_SESSION['firstName'])) : ?>
                     <li class="nav-item text-center">
-                        <a class="nav-link" style="color: #333;" href="#">Welcome <?php echo $_SESSION['user_name']; ?></a>
+                        <a class="nav-link" style="color: #002868;" href="#">Welcome, <?php echo $_SESSION['firstName']; ?></a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link" style="color: #333;" href="#">Logout</a>
+                        <button type="button" class="btn btn-custom">
+                            <a class="nav-link" style="color: #002868;" href="logout.php">Logout</a>
+                        </button>
+
                     </li>
                 <?php else : ?>
 
                     <li class="nav-item text-center">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModal1">
-                            <a class="nav-link" style="color: #333;" href="signup.php">Sign Up</a>
+                            <a class="nav-link" style="color: #002868;" href="signup.php">Sign Up</a>
                         </button>
                     </li>
                     <li class="nav-item text-center">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModal-login">
-                            <a class="nav-link" style="color: #333;" href="#">Log In</a>
+                            <a class="nav-link" style="color: #002868;" href="#">Log In</a>
                         </button>
                     </li>
                 <?php endif; ?>
