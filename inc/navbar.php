@@ -6,7 +6,7 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 session_start();
 //style="background: #BF0A30;"
 ?>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #fff; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);">
+<nav class="navbar navbar-expand-lg mx-auto navbar-light fixed-top" style="background: #fff; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);">
     <div class="container">
         <a class="navbar-brand" href="#"><img src="images/logo-nav.png" id="logo-nav" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@ session_start();
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a class="nav-link" style="color: #002868;" href="index.php#">Home</a>
                 </li>

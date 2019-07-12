@@ -154,7 +154,7 @@ locked()
                 <div class="row mt-3">
                     <div class="col-lg-4">
                         <button type="submit" name="submit" class="btn btn-info mx-auto text-bold">
-                            Pay ($50.00) <span class="fa fa-money-check-alt"></span>
+                            Pay ($50.00)
                         </button>
                     </div>
                 </div>
