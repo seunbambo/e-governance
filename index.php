@@ -8,7 +8,7 @@ require 'inc/header.php'; ?>
 <section style="background: #BF0A30; background-image: url('images/logo4.png'); background-position: center;
   background-repeat: no-repeat;
   background-size: 35%;
-  background-attachment: fixed; padding-bottom: 30px;">
+  background-attachment: fixed; padding-bottom: 30px; width: 100%; position:absolute;">
     <div class="" style="width: 100%;">
         <?php
         if (isset($_SESSION['email'])) {
