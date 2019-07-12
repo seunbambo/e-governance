@@ -8,7 +8,7 @@ require 'inc/header.php'; ?>
 <section style="background: #BF0A30; background-image: url('images/logo4.png'); background-position: center;
   background-repeat: no-repeat;
   background-size: 35%;
-  background-attachment: fixed; padding-bottom: 30px; width: 100%; position:absolute;">
+  background-attachment: fixed; width: 100%; position:absolute;">
     <div class="" style="width: 100%;">
         <?php
         if (isset($_SESSION['email'])) {
@@ -23,7 +23,7 @@ require 'inc/header.php'; ?>
             </div>
 
             <h1 class="display-5 text-light">E-Governance for Liberia</h1>
-            <div id="type"></div>
+            <p id="type"></p>
 
 
 
@@ -34,14 +34,14 @@ require 'inc/header.php'; ?>
             <h3 class="text-center mt-1 mb-3" style="padding-top: 50px; color: #fff;">Popular Services</h3>
 
             <div class="row mx-auto col-md-8" style="font-size: 15px; color: #fff;">
-                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="#">Agriculture <span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
-                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="epass.php">E-Passport <span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
-                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="#">Education <span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
+                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="#" style="letter-spacing: 0.2px;">Agriculture<span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
+                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="epass.php" style="letter-spacing: 0.2px;">E-Passport<span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
+                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="#" style="letter-spacing: 0.2px;">Education<span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
             </div>
             <div class="row mx-auto col-md-8" style="font-size: 15px; color: #fff;">
-                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="birth_cert.php">Birth Certificate <span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
-                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="marriage_cert.php">Marriage Certificate <span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
-                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="#">National ID Application <span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
+                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="birth_cert.php" style="letter-spacing: 0.2px;">Birth Certificate<span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
+                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="marriage_cert.php" style="letter-spacing: 0.2px;">Marriage Certificate<span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
+                <p class="col-md-3 mx-auto text-left text-light"><a class="text-light" href="#" style="letter-spacing: 0.2px;">National ID Application<span class="fa fa-arrow-circle-right" style="font-size: 17px;"></span></a></p>
             </div>
         </div>
         <!--

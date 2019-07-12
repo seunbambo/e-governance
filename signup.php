@@ -32,39 +32,39 @@ include 'signup-submit.php';
                     <div class='row'>
                         <div class='col-md-6'>
                             <div class="form-group">
-                                <label for="email" class="text-bold"><b>First Name</b></label> <input type="text" class="input form-control" id="firstName" name="firstName" placeholder="Enter First Name" autocomplete="off" required />
+                                <label for="email" class="text-bold">First Name</label> <input type="text" class="input form-control" id="firstName" name="firstName" placeholder="Enter First Name" autocomplete="off" required />
                             </div>
                         </div>
 
                         <div class='col-md-6'>
                             <div class="form-group">
-                                <label for="email"><b>Last Name</b></label> <input type="text" class="input form-control" id="lastName" name="lastName" placeholder="Enter Last Name" autocomplete="off" required />
+                                <label for="email">Last Name</label> <input type="text" class="input form-control" id="lastName" name="lastName" placeholder="Enter Last Name" autocomplete="off" required />
                             </div>
                         </div>
                     </div>
                     <div class='row'>
                         <div class='col-md-6'>
                             <div class="form-group">
-                                <label for="email"><b>Email Address</b></label> <input type="email" class="input form-control" id="email" name="email" placeholder="Enter Email Address" autocomplete="off" required />
+                                <label for="email">Email Address</label> <input type="email" class="input form-control" id="email" name="email" placeholder="Enter Email Address" autocomplete="off" required />
                             </div>
                         </div>
 
                         <div class='col-md-6'>
                             <div class="form-group">
-                                <label for="phone"><b>Phone</b></label> <input type="text" class="input form-control" id="phone" name="phone" placeholder="Enter Phone Number" autocomplete="off" required />
+                                <label for="phone">Phone</label> <input type="text" class="input form-control" id="phone" name="phone" placeholder="Enter Phone Number" autocomplete="off" required />
                             </div>
                         </div>
                     </div>
                     <div class='row'>
                         <div class='col-md-6'>
                             <div class="form-group">
-                                <label for="password"><b>Password</b></label> <input type="password" class="input form-control" id="password" name="password" placeholder="Enter Password" autocomplete="off" required />
+                                <label for="password">Password</label> <input type="password" class="input form-control" id="password" name="password" placeholder="Enter Password" autocomplete="off" required />
                             </div>
                         </div>
 
                         <div class='col-md-6'>
                             <div class="form-group">
-                                <label for="confirmpassword"><b>Confirm Password</b></label> <input type="password" class="input form-control" id="password" name="password" placeholder="Retype Password" autocomplete="off" required />
+                                <label for="confirmpassword">Confirm Password</label> <input type="password" class="input form-control" id="password" name="password" placeholder="Retype Password" autocomplete="off" required />
                             </div>
                         </div>
                     </div>

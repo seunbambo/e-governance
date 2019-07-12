@@ -125,10 +125,10 @@ session_start();
                                 <input class="input input-field" type="password" autocomplete="off" name="login-password" placeholder="Enter Password" required />
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-login" style="width: 100%;">LOG IN</button>
-                        </div>
                     </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-login" style="width: 100%;">LOG IN</button>
                 </div>
             </div>
         </div>

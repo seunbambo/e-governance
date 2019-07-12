@@ -12,11 +12,11 @@ class myPDF extends FPDF
     {
 
         //$fname = print_r($fname);
-        $this->image('images/birth-certificate.png', 13, -3, 270);
-        $this->Cell(80);
+        $this->image('images/birth-certificate.png', 0, 0, 210);
+        $this->Cell(0);
         $this->SetFont('Courier', 'BI', 17);
         include 'submit.php';
-        $this->cell(-50, 115, $_SESSION['firstname'], 0, 0, 'C');
+        $this->cell(-100, 115, $_SESSION['firstname'], 0, 0, 'C');
         $this->cell(220, 115, $_SESSION['middlename'], 0, 0, 'C');
         $this->cell(-50, 115, $_SESSION['surname'], 0, 0, 'C');
         $this->cell(-40, 172, $_SESSION['fname'], 0, 0, 'C');
@@ -50,7 +50,7 @@ class myPDF extends FPDF
 
 $pdf = new myPDF();
 $pdf->AliasNbPages();
-$pdf->AddPage('L', 'A4', 0);
+//$pdf->AddPage('L', 'A4', 0);
 $pdf->headerTable();
 //$pdf->viewTable();
 //$pdf->body();
@@ -69,4 +69,4 @@ $message .= '<br /><br /><br />';
 $message .= '<p style="color:blue">E-Governance.</p>';
 $message .= '</body></html>';
 
-mail($_SESSION['email'], "E-Governance Marriage Certificate", $message, $headers);
+//mail($_SESSION['email'], "E-Governance Marriage Certificate", $message, $headers);

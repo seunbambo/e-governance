@@ -8,6 +8,37 @@ html {
   height: 100%;
 }
 
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  color: #002868;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+p {
+  font-weight: 300;
+}
+
+#form-heading,
+form > h3 {
+  font-weight: 400;
+}
+
+#small {
+  text-shadow: -1px 5px 5px black, 5px 1px black 5px, 1px 5px black 5px,
+    5px -1px black 5px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
 body {
   background: #fff;
   /*background: #bf0a30;*/
@@ -173,13 +204,15 @@ body {
   padding: 5% 0%;
   font-size: 0.83rem;
   color: #002868;
-  font-family: "Open Sans";
 }
 
 .form-birth {
   font-size: 0.83rem;
   color: #002868;
-  font-family: "Open Sans";
+}
+
+.btn {
+  font-family: Quicksand;
 }
 
 .btn-custom {
@@ -206,14 +239,14 @@ body {
 }
 
 .btn-login {
-  background: #df4365;
+  background: #bf0a30;
   color: #fff;
   border-radius: 0px;
   padding: 15px;
 }
 
 .btn-info {
-  padding: 5px 10px;
+  padding: 10px 30px;
   border-radius: 0px;
 }
 
@@ -222,7 +255,7 @@ body {
 }
 
 .btn-login:hover {
-  background: #f16785;
+  background: #df4365;
   color: #fff;
   border-radius: 0px;
   cursor: pointer;
@@ -294,14 +327,10 @@ select {
   border: 1px solid #eee;
 }
 
-h2 {
-  color: #002868;
-}
-
 #type {
   margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: 100;
+  font-size: 15px;
+  font-weight: 300;
   color: #eee;
 }
 

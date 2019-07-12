@@ -9,7 +9,7 @@
 </script>
 
 <div id="flip">Click to slide down panel <span class="fa fa-angle-left"></span></div>
-<div id="panel">Hello world!</div>
+<div id="panel">Hello world! </div>
 -->
 <div class="container mt-5 mx-auto">
 <h1 class="heading">FAQ's</h1>
